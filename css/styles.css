@@ -1182,6 +1182,10 @@ margin-bottom: 16px;
 /* .mobile-menu-link:hover, .mobile-menu-link:focus{
     color: var(--modal-form-checbox-icon-color);
 } */
+.mobile-menu-connexion-list{
+    display: block;
+    margin-bottom: 48px;
+}
 .mobile-menu-connexion-number{
         font-size: 36px;
         font-weight: 700;
@@ -1215,7 +1219,6 @@ margin-bottom: 16px;
     justify-content: center;
     background-color: var(--logo-cl);
     border-radius: 50%;
-    margin-top: 48px;
 }
 .icon-social {
     fill: #f4f4fd;
