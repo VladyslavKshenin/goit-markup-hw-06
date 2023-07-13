@@ -38,8 +38,6 @@ body{
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid red;
-    outline-offset: -2px;
 }
 /*  tablet screen */
 @media only screen and (min-width: 768px) {
@@ -228,7 +226,7 @@ img{
 */
 .hero{
     background-color: var(--section-bg);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_mob@1x.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
     background-repeat: no-repeat;
@@ -237,6 +235,43 @@ img{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_mob@2x.jpg)
+    }
+}
+
+@media only screen and (min-width: 429px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_tab@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_desk@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office_desk@2x.jpg);
+        }
+    }
+}
+
 @media only screen and (min-width: 1158px) {
 .hero{
         padding-top: 188px;
@@ -1277,13 +1312,17 @@ margin-bottom: 16px;
         font-size: 36px;
         font-weight: 700;
         line-height: 40px;
-        letter-spacing: 0.72px;
+        letter-spacing: 0.01em;
         text-transform: capitalize;
         color: #4D5AE5;
         display: block;
-        text-wrap: nowrap;
         margin-bottom: 40px;
         
+}
+@media only screen and (min-width: 768px) {
+.mobile-menu-connexion-number{
+    letter-spacing: 0.01em;
+  }
 }
 
 .mobile-menu-connexion-link {
